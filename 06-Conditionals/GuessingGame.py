@@ -1,12 +1,12 @@
 import random
 randomNumber=random.randint(0,9)
-print("Can you guess the number I am  thinking....?")
-input=int(input("it is between 0 and 9      ="))
-if input< randomNumber:
-   print("Nope, My number is higer than you think")
-elif input> randomNumber:
-   print("Nope, My number is lower than you think")
-elif input== randomNumber:
-   print("Brovo , That is the exact number I am thinking ")
+number=int(input("please enter you guess between 0 and 9"))
+if(randomNumber>number):
+    print("Random number is Higher than your guess")
+elif(randomNumber<number):
+    print("Random number is lower than your guess")
+elif(randomNumber==number):
+    print("Bravo you have guess the random number ....!!!")
 else:
-   print("Something wrong here  ")
+    print("somthing is wrong here ")
+print(randomNumber)
